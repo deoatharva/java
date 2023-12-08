@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubble Sort</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+  <!-- Header Section -->
+  <header class="bg-blue-500 p-4 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <!-- Logo -->
+<a class="text-2xl font-bold" href="index.html">
+    Data Structure and Algorithm Project
+</a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+          <li><a href="algo.html" class="hover:text-gray-300">Algorithm</a></li>
+          <li><a href="work.html" class="hover:text-gray-300">Working Functionality</a></li>
+          <li><a href="code.html" class="hover:text-gray-300">Code</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<h1><b><marquee direction="right">Working Functionality</marquee></b></h1>
+<table>
+    <tr>
+        <th>Pass</th>
+        <th>K</th>
+        <th>N</th>
+        <th>PTR</th>
+        <th>N-K</th>
+        <th>A[PTR]=A[PTR+1]</th>
+        <th>Temp</th>
+        <th>A1</th>
+        <th>A2</th>
+	<th>A3</th>
+	<th>A4</th>
+	<th>A5</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+        <td>1</td>
+        <td>4</td>
+        <td>3>5</td>
+        <td>0</td>
+        <td>3</td>
+        <td>5</td>
+        <td>2</td>
+        <td>7</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+        <td>2</td>
+        <td>4</td>
+        <td>5>2</td>
+        <td>5</td>
+        <td>3</td>
+        <td>2</td>
+        <td>5</td>
+        <td>7</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5>7</td>
+        <td>5</td>
+        <td>3</td>
+        <td>2</td>
+        <td>5</td>
+        <td>7</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+        <td>4</td>
+        <td>4</td>
+        <td>7>1</td>
+        <td>7</td>
+        <td>3</td>
+        <td>2</td>
+        <td>5</td>
+        <td>1</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>5</td>
+        <td>1</td>
+        <td>3</td>
+        <td>3>2</td>
+        <td>3</td>
+        <td>2</td>
+        <td>3</td>
+        <td>5</td>
+        <td>1</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>5</td>
+        <td>2</td>
+        <td>3</td>
+        <td>3>5</td>
+        <td>3</td>
+        <td>2</td>
+        <td>3</td>
+        <td>5</td>
+        <td>1</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>5</td>
+        <td>3</tg>
+        <td>3</td>
+        <td>5>1</td>
+        <td>5</td>
+        <td>2</td>
+        <td>3</td>
+        <td>1</td>
+        <td>5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>3</td>
+        <td>5</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2>3</td>
+        <td>5</td>
+        <td>2</td>
+        <td>3</td>
+        <td>1</td>
+        <td>5</td>
+        <td>7</td>
+    </tr>
+     <tr>
+        <td>3</td>
+        <td>3</td>
+        <td>5</td>
+        <td>2</td>
+        <td>2</td>
+        <td>3>1</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>3</td>
+        <td>5</td>
+        <td>7</td>
+</tr>
+     <tr>
+        <td>4</td>
+        <td>4</td>
+        <td>5</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>5</td>
+        <td>7</td>
+
+
+
+</table>
+
+</body>
+</html>
+

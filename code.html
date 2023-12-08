@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubble Sort</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+    /* Add CSS styles for code block */
+    /* Stylish Pre Tag */
+pre {
+  background-color: #1e1e1e; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+  border: 1px solid #444; /* Slightly darker border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Increased padding */
+  white-space: pre-wrap;
+  font-size: 16px; /* Increased font size */
+  line-height: 1.4; /* Slightly increased line height */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Stylish Code Tag */
+code {
+  font-family: 'Fira Code', monospace; /* Stylish monospace font */
+  color: #61afef; /* Bright blue text color */
+  background-color: #2a2a2a; /* Slightly darker background */
+  padding: 4px 8px; /* Padding for code elements */
+  border-radius: 4px;
+}
+  </style>
+</head>
+<body class="bg-gray-100">
+  <!-- Header Section -->
+  <header class="bg-blue-500 p-4 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <!-- Logo -->
+<a class="text-2xl font-bold" href="index.html">
+    Data Structure and Algorithm Project
+</a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+          <li><a href="algo.html" class="hover:text-gray-300">Algorithm</a></li>
+          <li><a href="work.html" class="hover:text-gray-300">Working Functionality</a></li>
+          <li><a href="code.html" class="hover:text-gray-300">Code</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <h1><b><marquee direction="right">Here is the code in C++.</marquee></b></h1>
+  <!-- Code block -->
+<pre><code>//implementing bubble sort
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+
+void get(int i, int n, int *la) {
+    for(i = 0; i <= n; i++) {
+        cout &lt;&lt; "enter the " &lt;&lt; i &lt;&lt; " element :";
+        cin &gt;&gt; la[i];
+    }
+}
+
+void bubble(int n, int *la) {
+    int pass, ch, ptr;
+    for(pass = 0; pass < n; pass++) {
+        for(ptr = 0; ptr < n - 1; ptr++) {
+            if(la[ptr] > la[ptr + 1]) {
+                ch = la[ptr];
+                la[ptr] = la[ptr + 1];
+                la[ptr + 1] = ch;
+            }
+        }
+    }
+}
+
+void display(int i, int n, int *la) {
+    for(i = 0; i <= n; i++) {
+        cout &lt;&lt; la[i] &lt;&lt; endl;
+    }
+}
+
+int main() {
+    clrscr();
+    int n, i, j;
+    cout &lt;&lt; "enter the value you want to insert:";
+    cin &gt;&gt; n;
+    int la[100];
+    get(i, n, la);
+    bubble(n, la);
+    display(i, n, la);
+    getch();
+    return 0;
+}
+</code></pre>
+
+  </body>
+</html>
+
