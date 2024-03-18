@@ -15,7 +15,7 @@ public class P8
 
 		JButton button = new JButton("select color");
 		cp.add(button);
-
+   
 		button.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)

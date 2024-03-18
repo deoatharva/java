@@ -9,7 +9,7 @@ public class ButtonCount extends Frame implements ActionListener
 
 	public ButtonCount()
 	{
-		setLayout(new FlowLayout());
+		//setLayout(new FlowLayout());
 		
 		str=new String();
 		i=0;
