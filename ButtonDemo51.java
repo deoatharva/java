@@ -19,7 +19,7 @@ public class ButtonDemo51 extends JFrame implements ActionListener
 	       b2.addActionListener(this);
 	
 		getContentPane().add(b1);
-		add(b2;)
+		add(b2);
 		//add(b1,BorderLayout.EAST);
 		//add(b2);
 

@@ -12,8 +12,8 @@ public class ButtonDemo5 extends JFrame implements ActionListener
 		//setLayout(new FlowLayout());
 		
 		str=new String();
-		b1=new Button("One");
-		b2=new Button("Two");
+		b1=new JButton("One");
+		b2=new JButton("Two");
 		add(b1,BorderLayout.EAST);
 		add(b2);
 

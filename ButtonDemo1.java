@@ -34,17 +34,14 @@ public class ButtonDemo extends Frame implements ActionListener
 		}
 		repaint();
 	}
-
 	public void paint(Graphics g)
 	{
 		g.drawString(str,50,100);
 	}
-
 	public static void main(String args[])
 	{
 		ButtonDemo bd=new ButtonDemo();
 		bd.setSize(400,400);
 		bd.setVisible(true);
 	}
-	
 }
