@@ -18,6 +18,11 @@ public class AnonymousInnerClass1 {
 
         panel.addKeyListener(new KeyListener() {
             @Override
+            public void keyTyped(KeyEvent e) {
+                // Not needed for this example
+            }
+
+            @Override
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_UP) {
                     label.setText("Up arrow key pressed");
@@ -25,15 +30,11 @@ public class AnonymousInnerClass1 {
                     label.setText("Down arrow key pressed");
                 }
             }
-            @Override
-            public void keyTyped(KeyEvent e) {
-                label.setText("key typed");
-            }
+
             @Override
             public void keyReleased(KeyEvent e) {
-                label.setText("Key is released");
+                // Not needed for this example
             }
-            
         });
     }
 }
